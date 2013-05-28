@@ -6,12 +6,14 @@ package br.edu.mackenzie.caixa.servico;
  */
 public interface Banco {
 	
-	static int COUNT_SENHA = 0;
+	String getBancoID();
+	
+	String[] getOperacoes();
 	
 	boolean validaCartao();
-	
+
 	boolean validaSenha();
-	
+
 	
 
 }

@@ -4,9 +4,9 @@ package br.edu.mackenzie.caixa.servico;
  * @author Ferrete
  *
  */
-public class CentralBanco implements Banco {
+public abstract class CentralBanco implements Banco {
 	
-	private static int COUNT_SENHA = 0;
+	private String bancoID;
 	
 	
 	public CentralBanco() {
@@ -23,13 +23,18 @@ public class CentralBanco implements Banco {
 		return false;
 	}
 
-	public static int getCOUNT_SENHA() {
-		return COUNT_SENHA;
+	/**
+	 * @return the bancoID
+	 */
+	public String getBancoID() {
+		return bancoID;
 	}
 
-	public static void setCOUNT_SENHA(int cOUNT_SENHA) {
-		COUNT_SENHA = cOUNT_SENHA;
-	}
+
+	
+	
+	
+	
 	
 	
 
