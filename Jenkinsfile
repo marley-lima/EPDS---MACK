@@ -1,7 +1,9 @@
 #!/usr/bin/env groovy
 pipeline {
     agent any
-
+        tools {
+            maven "Maven"
+            }
     stages {
         stage('Getting code from SCM'){
             steps {
