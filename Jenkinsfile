@@ -18,7 +18,7 @@ pipeline {
             			sh "mvn sonar:sonar \
                       -Dsonar.projectKey=caixa \
                       -Dsonar.host.url=http://10.200.144.143:9000 \
-                      -Dsonar.login=436911139618ed771174b024642acf329dd66109
+                      -Dsonar.login=436911139618ed771174b024642acf329dd66109 \
                         -Dproject.settings=sonar-project.properties"
             			}
             		timeout(time:1, unit: 'HOURS'){
